@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+
+import colors as c
+print(c.clear)
+print(c.blue + 'Hello,' + c.magenta + ' What ' + c.violet + 'is ' + c.base00 + 'your ' + c.base3 + 'name?')
+name = input(c.red + '> ' + c.yellow)
+print(c.green + 'Nice to meet you, ' + c.cyan + name + c.green + '.')
+print(c.green + 'How are you today, ' + c.cyan + name + c.green + '?')
+feel = input(c.red + '> ' + c.yellow)
+print(c.violet + 'It is awesome that you are feeling ' + c.base00 + feel + c.violet + ', ' + c.cyan + name + c.violet + '.')

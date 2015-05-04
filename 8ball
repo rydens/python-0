@@ -1,0 +1,57 @@
+#!/usr/bin/env python3
+import colors as c
+import random
+import time
+print(c.clear)
+print('What is your name?')
+name = input(c.red + '> ' + c.cyan)
+
+print(c.violet + '''
+Welcome to the Magic Eight Ball, ''' + name + '''
+Enter your Questions below.
+''')
+
+answers = [
+    'Yes.',
+    'No.',
+    'Maybe So.',
+    'I dont know, but Google probably does.',
+    'Get off my lawn!',
+    'LEAVE ME ALONE!!!',
+    'Reply Hazy. Ask again later.',
+    'I dont like you very much.',
+    'I am sleepy right now- go ask Siri.',
+    'I honestly dont care whatsoever.',
+    'I dont know, but Google probably does.',
+    'Yer a wizard, ' + name + '.',
+    name + ', I AM YOUR FATHER!',
+    'I will go eat lunch now.',
+    'I like trains!',
+    'You smell.',
+    'If I told you, I would have to kill you.',
+    'I couldnt care less.',
+    'I dont care if I am a Magic 8 Ball or not, I dont know the answer.',
+    'Better not tell you now.',
+    'Do you like pie? I do.',
+    'Do you wanna build a snowman? Cmon lets go and play.',
+    'Let it go! Let it go! Cant hold it back anymore!',
+    'The Noah says: The snow glows yellow in the meadow tonight- I just couldnt hold it in. Let it flow, Let it flow! forgot to close the stall door...',
+    'Why dont you get off the computer and go outside?!',
+    'Stop fooling around and go do your homework!',
+    'You ask to many questions. I must kill you now.',
+    'EXTERMINATE! EXTERMINATE!EXTERMINATE!EXTERMINATE!EXTERMINATE!',
+    'Turn around, ' + name + ', there is someone watching you.'
+]
+while True:
+    question = input(c.red + '> ' + c.yellow)
+    if question == 'exit, please' or question == 'exit':
+        exit()
+    elif question == 'what will i be when i grow up?':
+        print(c.magenta + 'DEAD')
+    elif question == 'am i safe?':
+        print(c.red + 'NO')
+    elif 'love' in question:
+        print(c.cyan + 'Who do you think I am, cupid!?')
+    else:
+        answer = random.choice(answers)
+        print(c.random_color() + answer + c.reset)
