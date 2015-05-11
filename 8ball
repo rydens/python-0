@@ -44,7 +44,9 @@ answers = [
 ]
 while True:
     question = input(c.red + '> ' + c.yellow)
-    if question == 'exit, please' or question == 'exit':
+    if question == 'exit':
+        print(c.cyan + 'Say the magic word!')
+    elif question == 'exit, please' or question == 'exit please':
         exit()
     elif question == 'what will i be when i grow up?':
         print(c.magenta + 'DEAD')
